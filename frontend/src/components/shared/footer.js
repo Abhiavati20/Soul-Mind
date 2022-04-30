@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import logo from '../../assets/images/logo.png';
 const Footer = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-4 footer__logo">
-              <img src="./images/logo.png" alt=""></img>
+            <img  src={logo} alt='logo'></img>
             </div>
             <div className="col-4 footer__content">
               <h5>Content</h5>

@@ -14,13 +14,13 @@ const HeroSection = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-12 col-md-6 herosection__data'>
-              <h4 className='wow fadeInDown'>
+              <h4 className='wow fadeInDown' data-wow-duration="1s"  data-wow-delay="1s">
                 Talk to your therapist online privately anytime anywhere !
               </h4>
               <button className='mainbtn'>Get Started</button>
             </div>
             <div className='col-12 col-md-6 herosection__image wow fadeInRight' data-wow-duration="1s"  data-wow-delay="1s">
-              <img src='./images/herosection.png' alt='' />
+              <img src='./images/herosection.jpeg' style={{'borderRadius':'1rem'}} alt='' />
             </div>
           </div>
         </div>

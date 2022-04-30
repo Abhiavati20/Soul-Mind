@@ -17,10 +17,10 @@ const About = () => {
             <h2 className="headers">What We Do?</h2>
           </div>
           <div className="row">
-            <div className="col-12 col-md-6 about__image wow fadeInLeft" data-wow-duration="1s">
-              <img src="./images/about.png" alt="" />
+            <div className="col-12 col-md-6 about__image wow fadeInLeft" data-wow-duration="1s"  data-wow-delay="1s">
+              <img src="./images/about.jpeg" style={{borderRadius:'5rem'}} alt="" />
             </div>
-            <div className="col-12 col-md-6 about__data wow fadeInRight" data-wow-duration="1s"  data-wow-delay=".1s">
+            <div className="col-12 col-md-6 about__data wow fadeInRight" data-wow-duration="1s"  data-wow-delay="1s">
               <p>
                 Just like any muscle, your personality requires strengthening
                 and your heart, mind and soul deserve specialized care. With
