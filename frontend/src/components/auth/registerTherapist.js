@@ -166,7 +166,7 @@ const RegisterTherapist = ({
               />
             </div>
             <p className=" block sm:ml-12 md:ml-20 ml-16 mt-4  ">
-              Already on Soul?{" "}
+              Already on Soul&Mind?{" "}
               <span className=" text-soul-300 font-bold ">
                 <Link
                   to="/logintherapist"
@@ -180,7 +180,7 @@ const RegisterTherapist = ({
         </div>
 
         <div className=" h-screen sm:block hidden">
-          <img src={userRegister} alt="" className="h-screen object-cover" />
+        <img src={userRegister} alt="" style={{'objectFit' : 'contain',borderRadius:'2rem',width:'80%',height:'80%'}} className="h-screen" />
         </div>
       </div>
     </>

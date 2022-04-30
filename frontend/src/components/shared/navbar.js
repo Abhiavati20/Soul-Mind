@@ -51,6 +51,7 @@ const Navbar = ({
             ? 'navBar navbar navbar-expand-lg color'
             : 'navBar navbar navbar-expand-lg'
         }
+        
       >
         <div className='container'>
           <NavLink className='navbar-brand' to='/home'>
@@ -73,7 +74,7 @@ const Navbar = ({
           <div
             className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`}
           >
-            <ul className='navBar__list navbar-nav' id='navbarsExample09'>
+            <ul  className='navBar__list navbar-nav' id='navbarsExample09'>
               <li className='navBar__list__item nav-item'>
                 <NavLink
                   className='navBar__list__item__link navBar__list__item__link--active nav-link'
@@ -102,12 +103,6 @@ const Navbar = ({
                 </LinkScroll>
               </li>
               <li className='navBar__list__item nav-item'>
-                {/* <NavLink
-                  className='navBar__list__item__link nav-link'
-                  to='/works'
-                >
-                  How It Work
-                </NavLink> */}
                 <LinkScroll
                   to='works'
                   spy={true}
@@ -122,36 +117,13 @@ const Navbar = ({
               <li className='navBar__list__item nav-item'>
                 <NavLink
                   className='navBar__list__item__link nav-link'
-                  to='/articles'
-                >
-                  Article
-                </NavLink>
-              </li>
-              <li className='navBar__list__item nav-item'>
-                <NavLink
-                  className='navBar__list__item__link nav-link'
                   to='/therapistlist'
                 >
                   Therpist List
                 </NavLink>
               </li>
-              {auth && auth.isAuthenticated && (
-                <li className='navBar__list__item nav-item'>
-                  <NavLink
-                    className='navBar__list__item__link nav-link'
-                    to='/posts'
-                  >
-                    Community
-                  </NavLink>
-                </li>
-              )}
+              
               <li className='navBar__list__item nav-item'>
-                {/* <NavLink
-                  className='navBar__list__item__link nav-link'
-                  to='/contact'
-                >
-                  Contact Us
-                </NavLink> */}
                 <LinkScroll
                   to='contact'
                   spy={true}

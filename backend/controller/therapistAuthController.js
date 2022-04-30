@@ -92,11 +92,11 @@ module.exports.signup_post = async (req, res) => {
     // };
     // await sendEmail(options);
     // res.status(201).json({ token });
-    const confirmLink = `${process.env.API_URI}/api/therapist/confirm-therapist-email/${token}`;
+    const confirmLink = `http://localhost:3000/api/therapist/confirm-therapist-email/${token}`;
     console.log('confirm', confirmLink);
     //send email to complete regiseration
     // await transport.sendMail({
-    //   from: `Soul-Team 👻 <${process.env.EMAIL_USER}>`,
+    //   from: `Soul&Mind-Team 👻 <${process.env.EMAIL_USER}>`,
     //   to: email,
     //   subject: 'Please confirm your account',
     //   html: confirmEmail(fname, email, confirmLink),
@@ -129,7 +129,7 @@ module.exports.confirmTherapistEmail = async (req, res) => {
     res
       .status(200)
       .redirect(
-        `${process.env.FRONTEND_URI}/therapist-data-form/${therapist._id}`
+        `http:/therapist-data-form/${therapist._id}`
       );
   } catch (err) {
     console.log(err.message);
@@ -183,11 +183,11 @@ module.exports.forgotPassword = async (req, res) => {
     //   subject: "your passwud reset token in 10 min",
     //   message,
     // });
-    const resetPasswordLink = `${process.env.FRONTEND_URI}/therapist-reset-password/${resetToken}`; //front
+    const resetPasswordLink = `http://localhost:3000/therapist-reset-password/${resetToken}`; //front
 
     // send mail with the reset password link
     await transport.sendMail({
-      from: `Soul-Team  <${process.env.EMAIL_USER}>`,
+      from: `Soul&Mind-Team  <${process.env.EMAIL_USER}>`,
       to: req.body.email,
       subject: 'Password Reset',
       html: resetPassword(therapist.fname, resetPasswordLink),

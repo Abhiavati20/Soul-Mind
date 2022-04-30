@@ -34,7 +34,7 @@ const Appointments = ({
           <>
             <h5 className='headers'>
               Fees:{' '}
-              {oneTherapist && oneTherapist.fees ? oneTherapist.fees : 150} USD
+              {oneTherapist && oneTherapist.fees ? oneTherapist.fees : 150} RS
             </h5>
             <div className='h-full overflow-auto flex items-center justify-center'>
               <div className='container'>

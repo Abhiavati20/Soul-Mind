@@ -10,7 +10,7 @@ const RegisterOptions = () => {
     <React.Fragment>
       <div className="registeroptions">
         <div className="container">
-          <img src={logo} className="registeroptions__logo" alt=""></img>
+          <img src={logo} style={{width:'20%',margin:'1rem auto'}} className="registeroptions__logo" alt=""></img>
           <h2>Register As</h2>
           <div className="row">
             <div className="col-6">

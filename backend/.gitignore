@@ -1,4 +1,3 @@
 /node_modules
-# /config/default.json
-#/.env
-#after makeing this rep public i will ignore the config  and .env files
+/config/default.json
+/.env

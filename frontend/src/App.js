@@ -5,7 +5,6 @@ import { Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
 import './sass/main.scss';
 
 import Alert from './components/layout/Alert';
-import Article from './components/layout/articles/article';
 
 //state redux
 import { Provider } from 'react-redux';
@@ -58,7 +57,6 @@ import Works from './components/landingpage/works';
 import Contact from './components/landingpage/contact';
 
 import TherapistList from './components/therapist/therapistlist';
-import SingleArticle from './components/layout/articles/singleArticle';
 
 //admin
 // import AdminSideNav from "./components/admin/adminsidenav";
@@ -217,15 +215,7 @@ const App = () => {
           {/* <MessengerUser /> */}
           {/* </Route> */}
           <Route path="/messenger-therapist" component={MessengerTherapist} />
-          {/* <MessengerTherapist /> */}
-          {/* {!user ? <Redirect to="/" /> : <Messenger />} */}
-          {/* </Route> */}
-          <Route path="/articles" component={Article} />
-          {/* <Article />
-          </Route> */}
-          <Route path="/article/:id" component={SingleArticle} />
-          {/* <SingleArticle />
-          </Route> */}
+          
           <Route exact path="/therapist-card" component={AdminTherapistCard} />
           <Route exact path="/therapistpending" component={TherapistPending} />
           <Route
